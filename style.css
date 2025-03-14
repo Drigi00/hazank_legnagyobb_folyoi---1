@@ -1,100 +1,140 @@
 body {
-    width: 80%;
+ 
     margin: auto;
-    background-color: rgb(198, 251, 255);
-    background-image: url(kepek/fohatter.png);
+   
+    background-color: rgb(255, 255, 255);
+   
+    background-image: url(https://terkep-center.hu/img/5747/673660_karpat_medence_faliterkep_altpic_1/673660_karpat_medence_faliterkep.jpg?time=1710950568);
+   
     background-size: cover;
+   
     font-family: Arial, sans-serif;
-}
-
-header {
-    background-color: rgb(218, 218, 218);
+  }
+   
+  header {
     text-transform: uppercase;
-    border: 5px dashed rgb(255, 0, 0);
-    border-radius: 30px;
+   
+    border-radius: 70px;
+   
     text-align: center;
+   
     padding: 20px;
-    font-size: 2.5em;
-    color: rgb(0, 0, 139);
-}
-
-nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 15px;
-    background-image: url(./kepek/fohatter.png);
-    background-size: 90%;
-    background-color: rgb(189, 224, 252);
-    border: 3px solid rgb(255, 0, 0);
-    padding: 60px;
-    border-radius: 80px;
-    margin-top: 40px;
-}
-
-nav a {
-    background-color: rgb(252, 156, 226);
-    padding: 10px 20px;
-    border-radius: 15px;
+   
+    font-size: 1em;
+  }
+   
+  header h1 {
+    color: blue;
     text-decoration: underline;
-    color: rgb(2, 2, 2);
-    font-weight: bold;
-    text-align: center;
-    width: 100px;
-    margin: auto;
-}
-
-.tarolo {
+  }
+   
+  h2 {
+      color: green;
+    }
+   
+  p {
+      color: red
+   
+  }
+  h3 {
+      color:brown
+  }
+   
+   
+  nav {
     display: grid;
+   
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    background-image: url(./kepek/fohatter.png);
-    background-color: rgb(173, 216, 230);
-    padding: 50px;
-    background-size: 100%;
-    border-radius: 10vw;
-    border: 5px solid rgb(255, 0, 0);
-    gap: 30px;
-    margin: 30px;
-}
-
-.tarolo div {
-    background-image: url(./kepek/divhatter.png);
-    border-radius: 15vh;
-    padding: 50px;
-    background-size: 100%;
-    text-align: center;
-    border: 3px solid rgb(255, 0, 0);
-}
-
-img {
+  }
+   
+  article {
+    display: grid;
+    gap: 20px;
+    border-radius: 10px;
+   
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+   
+  img {
     width: 100%;
-    height: auto;
-}
-
-#Duna, #Tisza, #Rába, #Zagyva {
-    background-color: rgb(167, 227, 255);
-    border: 5px solid rgb(255, 0, 0);
-}
-
-
-@media screen and (max-width: 900px) {
-    .tarolo {
-        grid-template-columns: 1fr 1fr;
+  }
+   
+  #Duna {
+    background-color: rgb(0, 247, 255);
+   
+    border: 3px solid rgb(255, 44, 44);
+  }
+   
+  #Tisza {
+    background-color: rgb(0, 247, 255);
+   
+    border: 3px solid rgb(255, 76, 76);
+  }
+   
+  #Rába {
+    background-color: rgb(0, 247, 255);
+   
+    border: 3px solid rgb(255, 73, 73);
+  }
+   
+  #Zagyva {
+    background-color: rgb(0, 247, 255);
+   
+    border: 3px solid rgb(255, 75, 75);
+  }
+   
+  @media screen and (max-width: 850px) {
+      .columns {
+          grid-template-columns: 1fr 1fr 1fr;
+      }
+      #Duna {
+          max-width: 25vw;
+      }
+      #Tisza {
+          max-width: 25vw;
+      }
+      #Rába {
+          max-width: 25vw;
+      }
+      #Zagyva {
+          max-width: 25vw;
+      }
+     
+  }
+   
+  @media screen and (max-width: 600px) {
+      .columns {
+          grid-template-columns: 1fr 1fr;
+      }
+      #Duna {
+          max-width: 40vw;
+      }
+      #Tisza {
+          max-width: 40vw;
+      }
+      #Rába {
+          max-width: 40vw;
+      }
+      #Zagyva {
+          max-width: 40vw;
+      }
+     
+  }
+   
+  @media screen and (max-width: 500px) {
+      .columns {
+          grid-template-columns: 1fr;
+      }
+      #duna {
+          max-width: 80vw;
+      }
+      #Tisza {
+          max-width: 80vw;
+      }
+      #Rába {
+          max-width: 80vw;
+      }
+      #Zagyva {
+          max-width: 80vw;
+      }
     }
-    nav {
-        grid-template-columns: 1fr 1fr;
-        padding: 30px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .tarolo {
-        grid-template-columns: 1fr;
-    }
-    nav {
-        grid-template-columns: 1fr;
-        padding: 20px;
-    }
-    header {
-        font-size: 1.8em;
-    }
-}
